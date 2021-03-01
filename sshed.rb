@@ -5,20 +5,20 @@
 class Sshed < Formula
   desc ""
   homepage "https://github.com/trntv/sshed"
-  version "1.2.0-alpha-3"
+  version "1.2.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/trntv/sshed/releases/download/1.2.0-alpha-3/sshed_1.2.0-alpha-3_darwin_amd64.tar.gz"
-    sha256 "2f93bb9cd4a389a112cb47b5f8fc4d9f32d1fe43b4e4e213036188e8877dcc4e"
+    url "https://github.com/trntv/sshed/releases/download/1.2.0/sshed_1.2.0_darwin_amd64.tar.gz"
+    sha256 "9dc952dc997e6bff4b3ff212a77a398583c64a156db531fbfd04f41c5f9baa06"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/trntv/sshed/releases/download/1.2.0-alpha-3/sshed_1.2.0-alpha-3_linux_amd64.tar.gz"
-    sha256 "df87f0b28c4e6f9c812ed055eaceba99e0d830ce782495eb32deed28091532d5"
+    url "https://github.com/trntv/sshed/releases/download/1.2.0/sshed_1.2.0_linux_amd64.tar.gz"
+    sha256 "2a2671ba7b5462a557660d21a863cb565ffe79a53bab124bb4b1cd84b1d8c164"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/trntv/sshed/releases/download/1.2.0-alpha-3/sshed_1.2.0-alpha-3_linux_armv6.tar.gz"
-    sha256 "84285121b25b976ad7bc9a0b1396cc524b2fb43dc7659f14de9464683680d32c"
+    url "https://github.com/trntv/sshed/releases/download/1.2.0/sshed_1.2.0_linux_armv6.tar.gz"
+    sha256 "5c4fcd5c128e8f04bcd01f01b6665c9f61dabe825cc1c13b4e2b5dfc9ecfb3ad"
   end
 
   def install
